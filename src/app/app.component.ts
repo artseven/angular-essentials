@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import 'lodash';
 
-declare var _: any;
+// declare var _: any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
