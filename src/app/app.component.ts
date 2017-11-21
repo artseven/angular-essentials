@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import 'lodash';
+import {random} from 'lodash';
 
+// without @types/lodash
+// import 'lodash';
 // declare var _: any;
 @Component({
   selector: 'app-root',
@@ -17,6 +19,8 @@ export class AppComponent {
   }
 
   onIncrease() {
-    this.number = _.random(1, 10);
+    // without @types/lodash
+    // this.number = _.random(1, 10);
+    this.number = random(1, 10);
   }
 }
